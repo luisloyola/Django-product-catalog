@@ -1,2 +1,2 @@
 # Django-product-catalog
-Simple catálogo de productos creado en Django + PostgreSQL
+Simple catálogo de productos creado en **Django + PostgreSQL**
