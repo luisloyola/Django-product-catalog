@@ -39,7 +39,7 @@ class Product(models.Model):
     visibility = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
+    image = models.ImageField(upload_to='media/products/', blank=True)
     description = models.TextField(blank=True)
     #myDate = models.DateTimeField('date published')
 
