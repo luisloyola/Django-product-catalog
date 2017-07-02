@@ -1,0 +1,14 @@
+//http://www.webgraphviz.com/
+digraph G {
+
+"ProductCatalog/url.py" -> "ProductCatalogApp/urls.py" [label="\"\""]
+"ProductCatalog/url.py" -> "admin" [label="admin/"]
+
+"ProductCatalogApp/urls.py" -> "views.product_list" [label="\"\""]
+"ProductCatalogApp/urls.py" -> "views.product_list" [label="slug/"]
+"ProductCatalogApp/urls.py" -> "views.product_detail" [label="id/slug"]
+
+"views.product_list" -> "ProductCatalogApp/list.html" [label="categoty, categories, products"]
+
+"views.product_detail" -> "ProductCatalogApp/detail.html" [label="product,cart_product_form"]
+}
